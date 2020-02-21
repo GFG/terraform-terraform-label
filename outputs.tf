@@ -8,16 +8,20 @@ output "name" {
   description = "Normalized name"
 }
 
-output "namespace" {
-  value       = local.namespace
-  description = "Normalized namespace"
+output "project" {
+  value       = local.project
+  description = "Normalized project"
 }
 
-output "stage" {
-  value       = local.stage
+output "environment" {
+  value       = local.environment
   description = "Normalized stage"
 }
 
+output "owner" {
+  value = local.owner
+  description = "Normalize owner"
+}
 output "delimiter" {
   value       = local.delimiter
   description = "Delimiter between `namespace`, `stage`, `name` and `attributes`"

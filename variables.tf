@@ -1,13 +1,17 @@
-variable "namespace" {
+variable "project" {
   type        = string
   default     = ""
-  description = "Namespace, which could be your organization name or abbreviation, e.g. 'eg' or 'cp'"
+  description = "Project name, follow defined tables, i.e Datajet "
 }
 
-variable "stage" {
+variable "environment" {
   type        = string
   default     = ""
-  description = "Stage, e.g. 'prod', 'staging', 'dev'"
+  description = "Environment, e.g. 'prod', 'staging', 'dev'"
+}
+variable "owner" {
+  type = string
+  description = "Owner/ maitainner of resource, follow define owner table, i.e "
 }
 
 variable "name" {
