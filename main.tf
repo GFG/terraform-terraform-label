@@ -18,6 +18,7 @@ locals {
       "Name"        = local.id
       "Environment" = local.environment
       "Owner"       = local.owner
+      "Project"     = local.project
     },
     var.tags
   )
